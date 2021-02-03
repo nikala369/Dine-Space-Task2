@@ -143,4 +143,12 @@
   text-decoration: none;
   list-style: none;
 }
+
+/*Date and Time style*/
+.date-time-form {
+  width: 217px;
+  height: 58px;
+  background-color: #E4E7F3;
+  border-radius: 3px;
+}
 /*# sourceMappingURL=Navbar.css.map */
