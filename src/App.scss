@@ -1,3 +1,15 @@
-.desktop-nav {
-  background-color: blue;
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+ body {
+  margin: 0px;
+  padding: 0px;
+  background: #f7f7f7;
+  height: 100vh;
+
+}
+.body-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
