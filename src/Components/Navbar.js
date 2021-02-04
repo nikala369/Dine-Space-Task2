@@ -57,7 +57,7 @@ function Navbar() {
             <li>
               <NavLink exact to="/Dine-Space-Task2"
             activeClassName='active' className="dine-out-button ">
-              { pathname === '/Dine-Space-Task2' ?(
+              { pathname === '/Dine-Space-Task2/' ?(
               <img className="img-space" src={dineoutwhite} alt="/"/>
             ) : (
               <img className="img-space" src={dineoutgrey} alt="/"/>
