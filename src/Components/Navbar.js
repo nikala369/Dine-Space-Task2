@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
-import MenuItem from '@material-ui/core/MenuItem';
 import { NavLink } from 'react-router-dom';
 import "./Navbar.css";
 import { useLocation } from 'react-router-dom';
@@ -30,6 +29,11 @@ function Navbar() {
   const [click, setClick] = React.useState(false);
 
   const handleClick = () => setClick(!click);
+
+  const countChange = () => {
+    setCount(5);
+  }
+
   
   
   // Link image changed when === Pathname
@@ -39,8 +43,10 @@ function Navbar() {
     setPathname(location.pathname);
   }, [location]);
 
+
+
   const personBoxDone = () => {
-    
+    setClick(!click);
   }
 
   return(
@@ -57,7 +63,7 @@ function Navbar() {
               <img className="img-space" src={dineoutgrey} alt="/"/>
             )}Dine Out</NavLink>
             </li>
-            <li className="nav-link2"><NavLink exact to="/reservation" className='reservation-button'>
+            <li className="nav-link2"><NavLink exact to="/reservation" onClick={countChange} className='reservation-button'>
               { pathname === '/reservation' ?(
               <img className="img-space" src={reservationWhite} alt="/"/>
             ) : (
@@ -76,17 +82,13 @@ function Navbar() {
       <div className="date-time-person-dropdown-flex">
           <form htmlFor="date" className='date-time-form' >
           <img className="input-image-space" src={calendar} alt="/"/>
-          <label for="date" className="label-style"></label>
-            <input name="date" id="date" value="07-jun-10:15" format="dd-mm-time" className="input-style" type="datetime-local" src={dropdown} alt="/" />
+          <label htmlFor="date" className="label-style"></label>
+            <input name="date" id="date" defaultValue="07-jun-10:15" format="dd-mm-time" className="input-style" type="datetime-local" src={dropdown} alt="/" />
           </form>
 
           <div className={click ? "active-box-person": "person-box"}>
             <img className="person-icon" src={personIcon} alt="/" />  
-              { pathname === '/reservation' ?(
-              <p className="person-paragrap">{count + 4} Person</p>
-            ) : (
               <p className="person-paragrap">{count} Person</p>
-            )}
             <button onClick={handleClick} type="button" className={"button-dropdown"}>
             <img className="dropdown-button2" src={dropdown} alt="/" />
             
@@ -107,19 +109,14 @@ function Navbar() {
                     { pathname === '/reservation' ?(<img src={minusButtonActive}/>) : (
                     <img src={count > 1 ? minusButtonActive :minusButtonInactive}/>)}
                     </button>)}
-                  { pathname === '/reservation' ?(
-                  <p className="eina-font person-font">{count + 4} Person</p>
-                  ) : 
-                  (
                     <p className="eina-font person-font">{count} Person</p>
-                  )}
                   <button onClick={() => setCount(prevCount => prevCount + 1)} className="button-dropdown"><img src={plusButton}/></button>
                   <div className="column-divide-person-box"></div>
               </div>
             </div>
             <div className="second-row-drop-down">
               <p onClick={() => setCount(1)} className="eina-font positioning-clear-paragrap">Clear all</p>
-              <button  className="button-done">DONE</button>
+              <button onClick={personBoxDone} className="button-done">DONE</button>
             </div>
         </div>
             ) : (

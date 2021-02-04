@@ -252,6 +252,7 @@ input[type="datetime-local"]:before {
   border: none;
   background-color: transparent;
   outline: none;
+  cursor: pointer;
 }
 
 /*DropDown Menu For Person*/
@@ -346,6 +347,8 @@ input[type="datetime-local"]:before {
   margin-top: 30px;
   right: 24px;
   bottom: 10px;
+  cursor: pointer;
+  outline: none;
 }
 
 .positioning-clear-paragrap {
@@ -356,6 +359,7 @@ input[type="datetime-local"]:before {
   color: rgba(78, 78, 78, 0.5);
   bottom: -3px;
   left: 22px;
+  cursor: pointer;
 }
 
 .column-divide-person-box {
