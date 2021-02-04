@@ -12,7 +12,7 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route exact path="/Dine-Space-Task2" component={Dineout} />
+        <Route exact path="/Dine-Space-Task2/" component={Dineout} />
         <Route path="/reservation" component={Reservation} />
       </Switch>
     </Router>
