@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Dine-Space-Task2/static/css/main.c0a9c4fd.chunk.css",
+    "main.css": "/Dine-Space-Task2/static/css/main.eea7f83a.chunk.css",
     "main.js": "/Dine-Space-Task2/static/js/main.556eb1c0.chunk.js",
     "main.js.map": "/Dine-Space-Task2/static/js/main.556eb1c0.chunk.js.map",
     "runtime-main.js": "/Dine-Space-Task2/static/js/runtime-main.67f2e71b.js",
@@ -10,13 +10,13 @@
     "static/js/3.8c2422a0.chunk.js": "/Dine-Space-Task2/static/js/3.8c2422a0.chunk.js",
     "static/js/3.8c2422a0.chunk.js.map": "/Dine-Space-Task2/static/js/3.8c2422a0.chunk.js.map",
     "index.html": "/Dine-Space-Task2/index.html",
-    "static/css/main.c0a9c4fd.chunk.css.map": "/Dine-Space-Task2/static/css/main.c0a9c4fd.chunk.css.map",
+    "static/css/main.eea7f83a.chunk.css.map": "/Dine-Space-Task2/static/css/main.eea7f83a.chunk.css.map",
     "static/js/2.46c67ab2.chunk.js.LICENSE.txt": "/Dine-Space-Task2/static/js/2.46c67ab2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.67f2e71b.js",
     "static/js/2.46c67ab2.chunk.js",
-    "static/css/main.c0a9c4fd.chunk.css",
+    "static/css/main.eea7f83a.chunk.css",
     "static/js/main.556eb1c0.chunk.js"
   ]
 }
