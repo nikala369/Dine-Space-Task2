@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Dine-Space-Task2/static/css/main.eea7f83a.chunk.css",
-    "main.js": "/Dine-Space-Task2/static/js/main.556eb1c0.chunk.js",
-    "main.js.map": "/Dine-Space-Task2/static/js/main.556eb1c0.chunk.js.map",
+    "main.css": "/Dine-Space-Task2/static/css/main.8079e2e5.chunk.css",
+    "main.js": "/Dine-Space-Task2/static/js/main.b27858ab.chunk.js",
+    "main.js.map": "/Dine-Space-Task2/static/js/main.b27858ab.chunk.js.map",
     "runtime-main.js": "/Dine-Space-Task2/static/js/runtime-main.67f2e71b.js",
     "runtime-main.js.map": "/Dine-Space-Task2/static/js/runtime-main.67f2e71b.js.map",
     "static/js/2.46c67ab2.chunk.js": "/Dine-Space-Task2/static/js/2.46c67ab2.chunk.js",
@@ -10,13 +10,14 @@
     "static/js/3.8c2422a0.chunk.js": "/Dine-Space-Task2/static/js/3.8c2422a0.chunk.js",
     "static/js/3.8c2422a0.chunk.js.map": "/Dine-Space-Task2/static/js/3.8c2422a0.chunk.js.map",
     "index.html": "/Dine-Space-Task2/index.html",
-    "static/css/main.eea7f83a.chunk.css.map": "/Dine-Space-Task2/static/css/main.eea7f83a.chunk.css.map",
-    "static/js/2.46c67ab2.chunk.js.LICENSE.txt": "/Dine-Space-Task2/static/js/2.46c67ab2.chunk.js.LICENSE.txt"
+    "static/css/main.8079e2e5.chunk.css.map": "/Dine-Space-Task2/static/css/main.8079e2e5.chunk.css.map",
+    "static/js/2.46c67ab2.chunk.js.LICENSE.txt": "/Dine-Space-Task2/static/js/2.46c67ab2.chunk.js.LICENSE.txt",
+    "static/media/elina-04-semibold.a6a519b9.ttf": "/Dine-Space-Task2/static/media/elina-04-semibold.a6a519b9.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.67f2e71b.js",
     "static/js/2.46c67ab2.chunk.js",
-    "static/css/main.eea7f83a.chunk.css",
-    "static/js/main.556eb1c0.chunk.js"
+    "static/css/main.8079e2e5.chunk.css",
+    "static/js/main.b27858ab.chunk.js"
   ]
 }
