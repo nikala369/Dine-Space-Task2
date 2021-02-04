@@ -55,7 +55,7 @@ function Navbar() {
       <nav className="navbar-menu">
         <ul className="ul-control">
             <li>
-              <NavLink exact to="/Dine-Space-Task2"
+              <NavLink exact to="/Dine-Space-Task2/"
             activeClassName='active' className="dine-out-button ">
               { pathname === '/Dine-Space-Task2/' ?(
               <img className="img-space" src={dineoutwhite} alt="/"/>
@@ -63,14 +63,14 @@ function Navbar() {
               <img className="img-space" src={dineoutgrey} alt="/"/>
             )}Dine Out</NavLink>
             </li>
-            <li className="nav-link2"><NavLink exact to="/reservation" onClick={countChange} className='reservation-button'>
-              { pathname === '/reservation' ?(
+            <li className="nav-link2"><NavLink exact to="/reservation/" onClick={countChange} className='reservation-button'>
+              { pathname === '/reservation/' ?(
               <img className="img-space" src={reservationWhite} alt="/"/>
             ) : (
               <img className="img-space" src={reservation} alt="/"/>
             )}Reservation</NavLink></li>
-            <li><NavLink to="/Pick-up" className="pick-up-button ">
-              { pathname === '/Pick-up' ?(
+            <li><NavLink to="/Pick-up/" className="pick-up-button ">
+              { pathname === '/Pick-up/' ?(
               <img className="img-space" src={pickupWhite} alt="/"/>
             ) : (
               <img className="img-space" src={pickup} alt="/"/>
