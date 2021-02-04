@@ -1,4 +1,7 @@
-@font-face {font-family: "Eina03-SemiBold"; src: url("//db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.eot"); src: url("//db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.woff") format("woff"), url("//db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/b158925a1d762313849f2482a415369d.svg#Eina03-SemiBold") format("svg"); }
+@font-face {
+  font-family: 'Eina 04 W03 SemiBold';
+  src: local('Eina 04 W03 SemiBold'), url(./fonts/einafont.ttf) format('truetype');
+}
 
 @font-face {font-family: "Eina03-Regular";
   src: url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.eot");
@@ -17,7 +20,7 @@
   box-shadow: 0px 2px 3px 2px rgba(152, 152, 152, 0.25);
   border-radius: 4px;
   font-size: 18px;
-  font-family: Eina03-SemiBold;
+  font-family: Eina 04 W03 SemiBold;
 }
 .navbar-container {
     display: flex;
@@ -50,7 +53,8 @@
   background-color: white;
   border: none;
   border-radius: 0px;
-  font-family: Eina03-SemiBold;
+  font-family: Eina 04 W03 SemiBold;
+  font-weight: 500;
   line-height: 21px;
   font-size: 18px;
   text-decoration: none;
@@ -170,6 +174,8 @@ input[type="datetime-local"]:before {
   font-size: 14px;
   line-height: 16px;
   left: 40px;
+  font-family: Eina 04 W03 SemiBold;
+  font-weight: 500;
   
 }
 .person-icon {
@@ -201,7 +207,8 @@ input[type="datetime-local"]:before {
       box-shadow: -2px 4px 8px 2px rgba(70, 70, 70, 0.25);
       border-radius: 4px;
       user-select: none;
-      font-family: Eina03-SemiBold;
+      font-family: Eina 04 W03 SemiBold;
+      font-weight: 500;
 }
 .dropdown-inactive {
   display: none;
@@ -230,8 +237,11 @@ input[type="datetime-local"]:before {
 }
 .eina-font {
   font-family: Eina03-Regular;
+
 }
 .person-font {
+  font-family: Eina 04 W03 SemiBold;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: #000000;

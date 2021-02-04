@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import { NavLink } from 'react-router-dom';
+import './fonts/einafont.ttf';
 import "./Navbar.css";
 import { useLocation } from 'react-router-dom';
 import dineoutgrey from './images/dineoutgrey.png';
@@ -17,7 +18,6 @@ import vector from './images/vector.png';
 import minusButtonInactive from './images/minusButtonInactive.png';
 import plusButton from './images/plusButton.png';
 import minusButtonActive from './images/minusButtonActive.png';
-
 
   
 function Navbar() {
