@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import TextField from '@material-ui/core/TextField';
-import { makeStyles } from '@material-ui/core/styles';
+import 'date-fns';
 import { NavLink } from 'react-router-dom';
 import './fonts/einafont.ttf';
 import "./Navbar.css";
@@ -12,16 +11,16 @@ import reservationWhite from './images/reservationWhite.png';
 import pickup from './images/pickup.png';
 import pickupWhite from './images/pickupWhite.png';
 import personIcon from './images/personIcon.png';
-import calendar from './images/calendar.png';
 import dropdown from './images/dropdown.png';
 import vector from './images/vector.png';
 import minusButtonInactive from './images/minusButtonInactive.png';
 import plusButton from './images/plusButton.png';
 import minusButtonActive from './images/minusButtonActive.png';
+import MaterialUIPickers from './DatePicker'
 
   
 function Navbar() {
-  // const classes = useStyles();
+  
   const [count, setCount] = React.useState(1);
   const [click, setClick] = React.useState(false);
 
@@ -31,8 +30,6 @@ function Navbar() {
     setCount(5);
   }
 
-  
-  
   // Link image changed when === Pathname
   const [pathname, setPathname] = useState('/');
   const location = useLocation();
@@ -40,14 +37,13 @@ function Navbar() {
     setPathname(location.pathname);
   }, [location]);
 
-
-
   const personBoxDone = () => {
     setClick(!click);
   }
 
   return(
     <>
+    
   <div className="section-menu">
       <nav className="navbar-menu">
         <ul className="ul-control">
@@ -75,14 +71,9 @@ function Navbar() {
             <div className="underline-grey"></div>
         </ul>
       </nav>
-
-      <div className="date-time-person-dropdown-flex">
-          <form htmlFor="date" className='date-time-form' >
-          <img className="input-image-space" src={calendar} alt="/"/>
-          <label htmlFor="date" className="label-style"></label>
-            <input name="date" id="date" defaultValue="07-jun-10:15" format="dd-mm-time" className="input-style" type="datetime-local" src={dropdown} alt="/" />
-          </form>
-
+      
+      <MaterialUIPickers />
+      
           <div className={click ? "active-box-person": "person-box"}>
             <img className="person-icon" src={personIcon} alt="/" />  
               <p className="person-paragrap">{count} Person</p>
@@ -121,10 +112,19 @@ function Navbar() {
             )}
           </div>
 
-        </div>
-    </div>
+      </div>
     </>
   )
 };
+
+
+
+
+
+
+
+
+
+
 
 export default Navbar;

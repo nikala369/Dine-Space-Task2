@@ -2,9 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
-import Dineout from './Components/Dineout'
-import Reservation from './Components/Reservation'
-
+import Dineout from './Components/Dineout';
+import Reservation from './Components/Reservation';
 
 
 function App() {
