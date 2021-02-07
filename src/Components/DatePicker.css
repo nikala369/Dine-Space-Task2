@@ -37,23 +37,6 @@ html, body {
   margin-right: 20px;
 }
 
-.date-time-form-active {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  width: 217px;
-  background: #ACB4D8;
-  height: 58px;
-  border-radius: 3px;
-  margin-right: 20px;
-}
-
 .calendar-position {
   position: absolute;
   right: 41%;
@@ -177,7 +160,7 @@ div.react-datepicker {
 }
 
 .react-datepicker__month-container {
-  margin-left: -212.5px;
+  margin-left: 0px;
   margin-top: -40px;
 }
 
@@ -345,7 +328,7 @@ li.react-datepicker__time-list-item--selected:hover {
   display: flex;
   position: absolute;
   bottom: 28px !important;
-  left: 24px;
+  left: 28px;
   font-size: 18px !important;
   line-height: 21px !important;
   letter-spacing: -0.82px !important;
@@ -370,16 +353,18 @@ li.react-datepicker__time-list-item--selected:hover {
   background: #FC6C44;
   border-radius: 4px;
   width: 135px;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: -0.82px;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  letter-spacing: -0.82px !important;
   text-transform: uppercase;
   font-family: Eina03-Regular !important;
+  font-weight: 100 !important;
   color: #FFFFFF;
   border: none;
   height: 42px;
-  bottom: 20px;
-  right: 24px;
+  bottom: -184px;
+  right: -17px;
   outline: none;
+  cursor: pointer;
 }
 /*# sourceMappingURL=DatePicker.css.map */

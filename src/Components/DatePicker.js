@@ -19,29 +19,42 @@ export default function MaterialUIPickers() {
     setPathname(location.pathname);
   }, [location]);
 
-  
-  // The first commit of Material-UI
-  const [click, setClick] = React.useState(false);
+  const handleColorChange = () => {
+      const dateInput = document.getElementById("date-time-form");
+      console.log(dateInput)
+      dateInput.style.backgroundColor = "#E4E7F3";
+  }
 
+  const handleDateClick = () => {
+    const dateInput = document.getElementById("date-time-form");
+    console.log(dateInput)
+    dateInput.style.backgroundColor = "#ACB4D8";
+  }
+
+let hour=parseInt (new Date().getHours())
+// let min=parseInt (new Date().getMinutes())
   const [startDate, setStartDate] = React.useState(
-    setHours(setMinutes(new Date(), 30), 13)
+    setHours(setMinutes(new Date(), 30), hour)
   );
 
 // Box close (Done)
-  const personBoxDone = () => {
-    setClick(!click);
-  }
+   // const handleClickDoneButton = () => {
+    //  const dateBox = document.querySelector("react-datepicker");
+     // console.log(dateBox);
+      //dateBox.style.display = "none";
+  //  } 
 
 
   return (
   <div className="date-time-person-dropdown-flex">
-    <form className={ 'input[type="text"]:focus' ?"date-time-form":"date-time-form-active"}>
+    <form onClick={handleDateClick} id="date-time-form" className="date-time-form">
       <img className="calendar-position" src={calendar} alt="/" />
       <img className='downArrow' src={dropdown} alt="/" />
 
       { pathname === '/reservation/' ?(
         
               <DatePicker
+              onCalendarClose={handleColorChange}
               selected={startDate}
               onChange={date => setStartDate(date)}
               showTimeSelect
@@ -55,11 +68,12 @@ export default function MaterialUIPickers() {
               timeCaption="Arrival Time"
               dateFormat="d MMM HH:mm"
               > 
-              <button onClick={personBoxDone}className="close-button">DONE</button>
+              <input type="button" value="DONE" className="close-button" />
               </DatePicker> 
               
             ) : (
               <DatePicker
+              onCalendarClose={handleColorChange}
             selected={startDate}
             onChange={date => setStartDate(date)}
             showTimeSelect
@@ -73,7 +87,7 @@ export default function MaterialUIPickers() {
             dateFormat="d MMM HH:mm"
             value="Date & Time"
             >
-              <button onClick={personBoxDone}className="close-button">DONE</button>
+              <input type="button" value="DONE" className="close-button" />
             </DatePicker>
             
             )}

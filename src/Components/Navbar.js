@@ -40,6 +40,8 @@ function Navbar() {
   const personBoxDone = () => {
     setClick(!click);
   }
+  //const personBoxClose = () => {
+ // }
 
   return(
     <>
