@@ -232,14 +232,13 @@ div.react-datepicker {
 }
 
 .react-datepicker__time-list {
-  height: 250px !important;
+  height: 220px !important;
   position: absolute;
   top: -10px;
   bottom: 0;
   left: 0;
   right: -17px;
   overflow-y: scroll;
-  margin-top: -25px !important;
   letter-spacing: 0.12px;
   font-size: 16px !important;
   color: rgba(0, 0, 0, 0.17);
@@ -251,7 +250,7 @@ div.react-datepicker {
 
 .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
   outline: none !important;
-  height: 55px !important;
+  height: 45px !important;
 }
 
 li.react-datepicker__time-list-item {
@@ -264,7 +263,6 @@ li.react-datepicker__time-list-item {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -3px;
 }
 
 li.react-datepicker__time-list-item:hover {
@@ -291,6 +289,7 @@ li.react-datepicker__time-list-item--selected:hover {
 
 .react-datepicker__time-list {
   margin-left: -10px !important;
+  margin-top: 5px !important;
 }
 
 .react-datepicker-time__header {
