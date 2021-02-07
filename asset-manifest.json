@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/Dine-Space-Task2/static/css/main.8338b2cb.chunk.css",
-    "main.js": "/Dine-Space-Task2/static/js/main.c2e24627.chunk.js",
-    "main.js.map": "/Dine-Space-Task2/static/js/main.c2e24627.chunk.js.map",
-    "runtime-main.js": "/Dine-Space-Task2/static/js/runtime-main.9b086d83.js",
-    "runtime-main.js.map": "/Dine-Space-Task2/static/js/runtime-main.9b086d83.js.map",
+    "main.css": "/Dine-Space-Task2/static/css/main.960dcc69.chunk.css",
+    "main.js": "/Dine-Space-Task2/static/js/main.166b7ded.chunk.js",
+    "main.js.map": "/Dine-Space-Task2/static/js/main.166b7ded.chunk.js.map",
+    "runtime-main.js": "/Dine-Space-Task2/static/js/runtime-main.95d34eed.js",
+    "runtime-main.js.map": "/Dine-Space-Task2/static/js/runtime-main.95d34eed.js.map",
     "static/css/2.00850458.chunk.css": "/Dine-Space-Task2/static/css/2.00850458.chunk.css",
-    "static/js/2.c8ce1050.chunk.js": "/Dine-Space-Task2/static/js/2.c8ce1050.chunk.js",
-    "static/js/2.c8ce1050.chunk.js.map": "/Dine-Space-Task2/static/js/2.c8ce1050.chunk.js.map",
-    "static/js/3.27e7c08b.chunk.js": "/Dine-Space-Task2/static/js/3.27e7c08b.chunk.js",
-    "static/js/3.27e7c08b.chunk.js.map": "/Dine-Space-Task2/static/js/3.27e7c08b.chunk.js.map",
+    "static/js/2.0b4233dd.chunk.js": "/Dine-Space-Task2/static/js/2.0b4233dd.chunk.js",
+    "static/js/2.0b4233dd.chunk.js.map": "/Dine-Space-Task2/static/js/2.0b4233dd.chunk.js.map",
+    "static/js/3.302fc66c.chunk.js": "/Dine-Space-Task2/static/js/3.302fc66c.chunk.js",
+    "static/js/3.302fc66c.chunk.js.map": "/Dine-Space-Task2/static/js/3.302fc66c.chunk.js.map",
     "index.html": "/Dine-Space-Task2/index.html",
     "static/css/2.00850458.chunk.css.map": "/Dine-Space-Task2/static/css/2.00850458.chunk.css.map",
-    "static/css/main.8338b2cb.chunk.css.map": "/Dine-Space-Task2/static/css/main.8338b2cb.chunk.css.map",
-    "static/js/2.c8ce1050.chunk.js.LICENSE.txt": "/Dine-Space-Task2/static/js/2.c8ce1050.chunk.js.LICENSE.txt",
+    "static/css/main.960dcc69.chunk.css.map": "/Dine-Space-Task2/static/css/main.960dcc69.chunk.css.map",
+    "static/js/2.0b4233dd.chunk.js.LICENSE.txt": "/Dine-Space-Task2/static/js/2.0b4233dd.chunk.js.LICENSE.txt",
     "static/media/Navbar.css": "/Dine-Space-Task2/static/media/einafont.a6a519b9.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.9b086d83.js",
+    "static/js/runtime-main.95d34eed.js",
     "static/css/2.00850458.chunk.css",
-    "static/js/2.c8ce1050.chunk.js",
-    "static/css/main.8338b2cb.chunk.css",
-    "static/js/main.c2e24627.chunk.js"
+    "static/js/2.0b4233dd.chunk.js",
+    "static/css/main.960dcc69.chunk.css",
+    "static/js/main.166b7ded.chunk.js"
   ]
 }
