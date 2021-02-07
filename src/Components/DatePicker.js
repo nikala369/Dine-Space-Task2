@@ -61,7 +61,6 @@ let hour=parseInt (new Date().getHours())
               minDate={new Date()}
               timeFormat="HH:mm"
               todayButton="Clear all"
-              
               shouldCloseOnSelect={false}
               timeIntervals={15}
               formatWeekDay={nameOfDay => nameOfDay.substr(0,3)}

@@ -221,7 +221,7 @@ div.react-datepicker {
   width: 170px !important;
   height: 310px;
   margin-right: 86px;
-  margin-top: 30px;
+  margin-top: 25px;
   border: none !important;
 }
 
@@ -294,7 +294,7 @@ li.react-datepicker__time-list-item--selected:hover {
 }
 
 .react-datepicker-time__header {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   font-size: 20px !important;
   line-height: 24px !important;
   letter-spacing: 0.12px !important;
