@@ -19,34 +19,45 @@ export default function MaterialUIPickers() {
     setPathname(location.pathname);
   }, [location]);
 
-
+  
   // The first commit of Material-UI
   const [click, setClick] = React.useState(false);
+
   const [startDate, setStartDate] = React.useState(
     setHours(setMinutes(new Date(), 30), 13)
   );
 
+// Box close (Done)
+  const personBoxDone = () => {
+    setClick(!click);
+  }
+
 
   return (
   <div className="date-time-person-dropdown-flex">
-    <form  className="date-time-form">
+    <form className={ 'input[type="text"]:focus' ?"date-time-form":"date-time-form-active"}>
       <img className="calendar-position" src={calendar} alt="/" />
       <img className='downArrow' src={dropdown} alt="/" />
 
       { pathname === '/reservation/' ?(
+        
               <DatePicker
-              className="date-time-control"
               selected={startDate}
               onChange={date => setStartDate(date)}
               showTimeSelect
               minDate={new Date()}
               timeFormat="HH:mm"
+              todayButton="Clear all"
               
+              shouldCloseOnSelect={false}
               timeIntervals={15}
               formatWeekDay={nameOfDay => nameOfDay.substr(0,3)}
               timeCaption="Arrival Time"
               dateFormat="d MMM HH:mm"
-              />
+              > 
+              <button onClick={personBoxDone}className="close-button">DONE</button>
+              </DatePicker> 
+              
             ) : (
               <DatePicker
             selected={startDate}
@@ -54,12 +65,16 @@ export default function MaterialUIPickers() {
             showTimeSelect
             minDate={new Date()}
             timeFormat="HH:mm"
+            shouldCloseOnSelect={false}
+            todayButton="Clear all"
             timeIntervals={15}
             formatWeekDay={nameOfDay => nameOfDay.substr(0,3)}
             timeCaption="Arrival Time"
             dateFormat="d MMM HH:mm"
             value="Date & Time"
-            />
+            >
+              <button onClick={personBoxDone}className="close-button">DONE</button>
+            </DatePicker>
             
             )}
 

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Eina03-Regular";
+  src: local("Eina03-Regular"), url(./fonts/Eina03-Regular.ttf) format('truetype');
+}
+
 html,body {
   position: relative !important;
 }
@@ -140,7 +145,7 @@ font-size: 14px !important;
   margin-left: -9px;
 }
 .react-datepicker__month-container {
-  
+  margin-left: -212.5px;
   margin-top: -40px;
 }
 //Import calendar png
@@ -170,7 +175,7 @@ font-size: 14px !important;
   background-repeat: no-repeat;
   border: none !important;
   background-position: center;
-  right: 237.5px !important;
+  right: 233.5px !important;
   top: 202px;
   width: 20px;
   height: 20px;
@@ -195,8 +200,10 @@ font-size: 14px !important;
 .react-datepicker__time-container {
   border-left: none !important;
   width: 170px !important;
-  height:400px;
-  margin-right: -29px;
+  height:310px;
+  margin-right: 86px;
+  margin-top: 30px;
+  border:none !important;
   
 }
 .react-datepicker__time-box {
@@ -208,7 +215,7 @@ font-size: 14px !important;
 .react-datepicker__time-list {
   height: 240px !important;
   position: absolute;
-    top: 0;
+    top: -10px;
     bottom: 0;
     left: 0;
     right: -17px; 
@@ -272,4 +279,54 @@ li.react-datepicker__time-list-item--selected:hover {
   position: relative;
   top: 3px;
   padding: 10px;
+}
+.react-datepicker__month-container::after {
+  content: "";
+  position: absolute;
+  width: 606px;
+  background: #D6D6D6;
+  height: 1px;
+  z-index: 1;
+  bottom: 82px;
+  left: 0px ;
+  
+}
+//Clear button
+.react-datepicker__today-button {
+  display: flex;
+  position: absolute;
+  bottom: 28px !important;
+  left: 24px;
+  font-size: 18px !important;
+line-height: 21px !important;
+letter-spacing: -0.82px !important;
+color: rgba(78, 78, 78, 0.5) !important;
+font-weight: 400 !important;
+cursor: pointer;
+user-select: none;
+background: transparent;
+border: none !important;
+}
+.react-datepicker__today-button:active {
+  color: black !important;
+  text-decoration: underline;
+}
+
+.close-button {
+  position: absolute;
+  background: #FC6C44;
+  border-radius: 4px;
+  width: 135px;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.82px;
+  text-transform: uppercase;
+  font-family: Eina03-Regular !important;
+  color: #FFFFFF;
+  border: none;
+  height: 42px;
+  bottom: 20px;
+  right: 24px;
+  outline: none;
+
 }

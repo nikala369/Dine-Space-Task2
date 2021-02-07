@@ -3,10 +3,10 @@
   src: local('Eina 04 W03 SemiBold'), url(./fonts/einafont.ttf) format('truetype');
 }
 
-@font-face {font-family: "Eina03-Regular";
-  src: url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.eot");
-  src: url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.woff") format("woff"), url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/221e88a3e872fdb19cdf5d76e2c26055.svg#Eina03-Regular") format("svg"); }
-  
+@font-face {
+  font-family: "Eina03-Regular";
+  src: local("Eina03-Regular"), url(./fonts/Eina03-Regular.ttf) format('truetype');
+}
 @mixin flexCenter {
   display: flex;
   justify-content: center;
