@@ -1,7 +1,8 @@
 import 'date-fns';
 import React, {useState, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
-import DatePicker, {registerLocale} from 'react-datepicker';
+import { registerLocale, setDefaultLocale } from  "react-datepicker";
+import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import enGb from 'date-fns/locale/en-GB';
 import {setMinutes, setHours} from "date-fns";
@@ -18,6 +19,8 @@ export default function MaterialUIPickers() {
   useEffect(() => {
     setPathname(location.pathname);
   }, [location]);
+
+  registerLocale('en', enGb)
 
   const handleColorChange = () => {
       const dateInput = document.getElementById("date-time-form");
@@ -66,6 +69,7 @@ let hour=parseInt (new Date().getHours())
               formatWeekDay={nameOfDay => nameOfDay.substr(0,3)}
               timeCaption="Arrival Time"
               dateFormat="d MMM HH:mm"
+              locale="en"
               > 
               <input type="button" value="DONE" className="close-button" />
               </DatePicker> 
@@ -85,6 +89,7 @@ let hour=parseInt (new Date().getHours())
             timeCaption="Arrival Time"
             dateFormat="d MMM HH:mm"
             value="Date & Time"
+            locale="en"
             >
               <input type="button" value="DONE" className="close-button" />
             </DatePicker>
