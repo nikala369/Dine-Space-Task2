@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Dine-Space-Task2/static/css/main.432fd377.chunk.css",
+    "main.css": "/Dine-Space-Task2/static/css/main.46fb58d8.chunk.css",
     "main.js": "/Dine-Space-Task2/static/js/main.3864d798.chunk.js",
     "main.js.map": "/Dine-Space-Task2/static/js/main.3864d798.chunk.js.map",
     "runtime-main.js": "/Dine-Space-Task2/static/js/runtime-main.95d34eed.js",
@@ -12,7 +12,7 @@
     "static/js/3.302fc66c.chunk.js.map": "/Dine-Space-Task2/static/js/3.302fc66c.chunk.js.map",
     "index.html": "/Dine-Space-Task2/index.html",
     "static/css/2.00850458.chunk.css.map": "/Dine-Space-Task2/static/css/2.00850458.chunk.css.map",
-    "static/css/main.432fd377.chunk.css.map": "/Dine-Space-Task2/static/css/main.432fd377.chunk.css.map",
+    "static/css/main.46fb58d8.chunk.css.map": "/Dine-Space-Task2/static/css/main.46fb58d8.chunk.css.map",
     "static/js/2.9cd18c0a.chunk.js.LICENSE.txt": "/Dine-Space-Task2/static/js/2.9cd18c0a.chunk.js.LICENSE.txt",
     "static/media/DatePicker.css": "/Dine-Space-Task2/static/media/Eina03-Regular.9701570c.ttf",
     "static/media/Navbar.css": "/Dine-Space-Task2/static/media/einafont.a6a519b9.ttf"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.95d34eed.js",
     "static/css/2.00850458.chunk.css",
     "static/js/2.9cd18c0a.chunk.js",
-    "static/css/main.432fd377.chunk.css",
+    "static/css/main.46fb58d8.chunk.css",
     "static/js/main.3864d798.chunk.js"
   ]
 }
