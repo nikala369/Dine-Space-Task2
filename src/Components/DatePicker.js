@@ -1,8 +1,10 @@
 import 'date-fns';
 import React, {useState, useEffect} from 'react';
 import { useLocation } from 'react-router-dom';
-import DatePicker from 'react-datepicker';
+import DatePicker, {registerLocale} from 'react-datepicker';
 import moment from 'moment';
+import enGb from 'date-fns/locale/en-GB';
+import {setMinutes, setHours} from "date-fns";
 import calendar from './images/calendar.png';
 import dropdown from './images/dropdown.png';
 import "react-datepicker/dist/react-datepicker.css";
@@ -18,27 +20,31 @@ export default function MaterialUIPickers() {
   }, [location]);
 
 
-  
   // The first commit of Material-UI
   const [click, setClick] = React.useState(false);
-  const [startDate, setStartDate] = React.useState(new Date());
+  const [startDate, setStartDate] = React.useState(
+    setHours(setMinutes(new Date(), 30), 13)
+  );
 
 
   return (
   <div className="date-time-person-dropdown-flex">
-    <form className="date-time-form">
+    <form  className="date-time-form">
       <img className="calendar-position" src={calendar} alt="/" />
-      <img className="downArrow" src={dropdown} alt="/" />
+      <img className='downArrow' src={dropdown} alt="/" />
 
       { pathname === '/reservation/' ?(
               <DatePicker
+              className="date-time-control"
               selected={startDate}
               onChange={date => setStartDate(date)}
               showTimeSelect
               minDate={new Date()}
               timeFormat="HH:mm"
+              
               timeIntervals={15}
-              timeCaption="time"
+              formatWeekDay={nameOfDay => nameOfDay.substr(0,3)}
+              timeCaption="Arrival Time"
               dateFormat="d MMM HH:mm"
               />
             ) : (
@@ -49,27 +55,15 @@ export default function MaterialUIPickers() {
             minDate={new Date()}
             timeFormat="HH:mm"
             timeIntervals={15}
-            timeCaption="time"
+            formatWeekDay={nameOfDay => nameOfDay.substr(0,3)}
+            timeCaption="Arrival Time"
             dateFormat="d MMM HH:mm"
             value="Date & Time"
             />
+            
             )}
-        {/*
-          <input
-          type="time" 
-          disableToolbar
-          variant="inline"
-          showTimeSelect
-          excludeTimes={[
-        setHours(setMinutes(new Date(), 0), 17),
-        setHours(setMinutes(new Date(), 30), 18),
-        setHours(setMinutes(new Date(), 30), 19),
-        setHours(setMinutes(new Date(), 30), 17)
-      ]}
-          />
-          */}
 
     </form>
-   </div>
+  </div>
   );
 }

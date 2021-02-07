@@ -20,7 +20,7 @@ import MaterialUIPickers from './DatePicker'
 
   
 function Navbar() {
-  
+  // Counting for plus minus buttons
   const [count, setCount] = React.useState(1);
   const [click, setClick] = React.useState(false);
 
@@ -44,7 +44,7 @@ function Navbar() {
   return(
     <>
     
-  <div className="section-menu">
+  <div className="section-menu" >
       <nav className="navbar-menu">
         <ul className="ul-control">
             <li>

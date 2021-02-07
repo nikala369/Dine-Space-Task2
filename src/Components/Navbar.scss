@@ -221,8 +221,12 @@ a:hover{
     bottom: -3px;
     left: 22px;
     cursor: pointer;
-    text-decoration: underline;
 }
+.positioning-clear-paragrap:active {
+    text-decoration: underline;
+    color: black;
+}
+
 .column-divide-person-box {
   position: absolute;
   width: 405px;
