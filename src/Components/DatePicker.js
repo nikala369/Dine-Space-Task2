@@ -29,10 +29,16 @@ export default function MaterialUIPickers() {
   }
 
   const handleDateClick = () => {
-    const dateInput = document.getElementById("date-time-form");
-    console.log(dateInput)
-    dateInput.style.backgroundColor = "#ACB4D8";
+    
+    const formChange = document.getElementById("date-time-form")
+    console.log(formChange);
+    formChange.style.backgroundColor = "#ACB4D8";
   }
+
+  
+
+
+
 
 let hour=parseInt (new Date().getHours())
 // let min=parseInt (new Date().getMinutes())
@@ -50,13 +56,14 @@ let hour=parseInt (new Date().getHours())
 
   return (
   <div className="date-time-person-dropdown-flex">
-    <form onClick={handleDateClick} id="date-time-form" className="date-time-form">
+    <form  id="date-time-form" className="date-time-form">
       <img className="calendar-position" src={calendar} alt="/" />
-      <img className='downArrow' src={dropdown} alt="/" />
+      <img onClick={handleDateClick}  className='downArrow' src={dropdown} alt="/" />
 
       { pathname === '/reservation/' ?(
         
               <DatePicker
+              onCalendarOpen={handleDateClick}
               onCalendarClose={handleColorChange}
               selected={startDate}
               onChange={date => setStartDate(date)}
@@ -76,6 +83,7 @@ let hour=parseInt (new Date().getHours())
               
             ) : (
               <DatePicker
+              onCalendarOpen={handleDateClick}
               onCalendarClose={handleColorChange}
             selected={startDate}
             onChange={date => setStartDate(date)}
@@ -90,6 +98,7 @@ let hour=parseInt (new Date().getHours())
             dateFormat="d MMM HH:mm"
             value="Date & Time"
             locale="en"
+            
             >
               <input type="button" value="DONE" className="close-button" />
             </DatePicker>
