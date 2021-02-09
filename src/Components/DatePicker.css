@@ -367,4 +367,8 @@ li.react-datepicker__time-list-item--selected:hover {
   outline: none;
   cursor: pointer;
 }
+
+.react-datepicker__tab-loop {
+  display: block;
+}
 /*# sourceMappingURL=DatePicker.css.map */

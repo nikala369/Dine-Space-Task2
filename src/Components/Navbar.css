@@ -104,7 +104,8 @@
 }
 
 .img-space {
-  margin: 5px;
+  margin: 10px;
+  margin-left: -2px;
 }
 
 .active {

@@ -40,13 +40,20 @@ function Navbar() {
   const personBoxDone = () => {
     setClick(!click);
   }
+
+  
+  const bodyClickClose = () => {
+      console.log("ss");
+    }
+
+    
   //const personBoxClose = () => {
  // }
 
   return(
     <>
     
-  <div className="section-menu" >
+  <div className="section-menu" id="section-main" onClick={bodyClickClose} >
       <nav className="navbar-menu">
         <ul className="ul-control">
             <li>
@@ -84,7 +91,7 @@ function Navbar() {
             
             </button>
             {click ? (
-        <div className="drop-down-menu-active">
+        <div className="drop-down-menu-active" id="active-drop">
             <div className="first-row-drop-down">
               <div className="first-half">
                   <img className="img-space-person" src={vector}/>

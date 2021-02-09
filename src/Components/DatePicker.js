@@ -20,25 +20,20 @@ export default function MaterialUIPickers() {
     setPathname(location.pathname);
   }, [location]);
 
+  // Starting from Mon on Calendar
   registerLocale('en', enGb)
 
-  const handleColorChange = () => {
+  const handleDateClose = () => {
       const dateInput = document.getElementById("date-time-form");
       console.log(dateInput)
       dateInput.style.backgroundColor = "#E4E7F3";
   }
 
-  const handleDateClick = () => {
-    
-    const formChange = document.getElementById("date-time-form")
+  const handleDateOpen = () => {
+    const formChange = document.getElementById("date-time-form");
     console.log(formChange);
     formChange.style.backgroundColor = "#ACB4D8";
-  }
-
-  
-
-
-
+  };
 
 let hour=parseInt (new Date().getHours())
 // let min=parseInt (new Date().getMinutes())
@@ -46,25 +41,27 @@ let hour=parseInt (new Date().getHours())
     setHours(setMinutes(new Date(), 30), hour)
   );
 
-// Box close (Done)
-   // const handleClickDoneButton = () => {
-    //  const dateBox = document.querySelector("react-datepicker");
-     // console.log(dateBox);
-      //dateBox.style.display = "none";
-  //  } 
+  // Box close (Done)
+    const handleDatepickerClose = () => {
+      const formChange = document.getElementById("date-time-form");
+      const dateBox = document.querySelector(".react-datepicker__tab-loop");
+      console.log(dateBox);
+      dateBox.style.display = dateBox.style.display === 'block' ? 'none' : 'none';
+      formChange.style.background = "#E4E7F3";
+    } 
 
 
   return (
   <div className="date-time-person-dropdown-flex">
     <form  id="date-time-form" className="date-time-form">
       <img className="calendar-position" src={calendar} alt="/" />
-      <img onClick={handleDateClick}  className='downArrow' src={dropdown} alt="/" />
+      <img className='downArrow' src={dropdown} alt="/" />
 
       { pathname === '/reservation/' ?(
-        
+              <label>
               <DatePicker
-              onCalendarOpen={handleDateClick}
-              onCalendarClose={handleColorChange}
+              onCalendarOpen={handleDateOpen}
+              onCalendarClose={handleDateClose}
               selected={startDate}
               onChange={date => setStartDate(date)}
               showTimeSelect
@@ -78,13 +75,15 @@ let hour=parseInt (new Date().getHours())
               dateFormat="d MMM HH:mm"
               locale="en"
               > 
-              <input type="button" value="DONE" className="close-button" />
-              </DatePicker> 
               
+              <input onClick={handleDatepickerClose} type="button" value="DONE" className="close-button" />
+              </DatePicker> 
+              </label>
             ) : (
+              <label>
               <DatePicker
-              onCalendarOpen={handleDateClick}
-              onCalendarClose={handleColorChange}
+              onCalendarOpen={handleDateOpen}
+              onCalendarClose={handleDateClose}
             selected={startDate}
             onChange={date => setStartDate(date)}
             showTimeSelect
@@ -100,8 +99,9 @@ let hour=parseInt (new Date().getHours())
             locale="en"
             
             >
-              <input type="button" value="DONE" className="close-button" />
+              <input onClick={handleDatepickerClose} type="button" value="DONE" className="close-button" />
             </DatePicker>
+            </label>
             
             )}
 
