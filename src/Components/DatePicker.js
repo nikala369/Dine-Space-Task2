@@ -5,12 +5,11 @@ import { registerLocale, setDefaultLocale } from  "react-datepicker";
 import DatePicker from 'react-datepicker';
 import moment from 'moment';
 import enGb from 'date-fns/locale/en-GB';
-import {setMinutes, setHours} from "date-fns";
+import {setMinutes, setHours, subDays} from "date-fns";
 import calendar from './images/calendar.png';
 import dropdown from './images/dropdown.png';
 import "react-datepicker/dist/react-datepicker.css";
 import './DatePicker.css';
-
 
 export default function MaterialUIPickers() {
   // Pathname for changing dateformat 
@@ -35,7 +34,7 @@ export default function MaterialUIPickers() {
     formChange.style.backgroundColor = "#ACB4D8";
   };
 
-let hour=parseInt (new Date().getHours())
+let hour = parseInt(new Date().getHours());
 // let min=parseInt (new Date().getMinutes())
   const [startDate, setStartDate] = React.useState(
     setHours(setMinutes(new Date(), 30), hour)
@@ -50,7 +49,6 @@ let hour=parseInt (new Date().getHours())
       formChange.style.background = "#E4E7F3";
     } 
 
-
   return (
   <div className="date-time-person-dropdown-flex">
     <form  id="date-time-form" className="date-time-form">
@@ -59,13 +57,13 @@ let hour=parseInt (new Date().getHours())
 
       { pathname === '/reservation/' ?(
               <label>
-              <DatePicker
+            <DatePicker
               onCalendarOpen={handleDateOpen}
               onCalendarClose={handleDateClose}
               selected={startDate}
               onChange={date => setStartDate(date)}
               showTimeSelect
-              minDate={new Date()}
+              disabledKeyboardNavigation
               timeFormat="HH:mm"
               todayButton="Clear all"
               shouldCloseOnSelect={false}
@@ -74,16 +72,17 @@ let hour=parseInt (new Date().getHours())
               timeCaption="Arrival Time"
               dateFormat="d MMM HH:mm"
               locale="en"
-              > 
-              
+              minDate={new Date()}
+              excludeDates = {[subDays(new Date(), 1)]}
+            > 
               <input onClick={handleDatepickerClose} type="button" value="DONE" className="close-button" />
               </DatePicker> 
               </label>
             ) : (
               <label>
-              <DatePicker
-              onCalendarOpen={handleDateOpen}
-              onCalendarClose={handleDateClose}
+          <DatePicker
+            onCalendarOpen={handleDateOpen}
+            onCalendarClose={handleDateClose}
             selected={startDate}
             onChange={date => setStartDate(date)}
             showTimeSelect
@@ -97,10 +96,10 @@ let hour=parseInt (new Date().getHours())
             dateFormat="d MMM HH:mm"
             value="Date & Time"
             locale="en"
-            
-            >
-              <input onClick={handleDatepickerClose} type="button" value="DONE" className="close-button" />
-            </DatePicker>
+            excludeDates = {[subDays(new Date(), 1)]}
+          >
+            <input onClick={handleDatepickerClose} type="button" value="DONE" className="close-button" />
+          </DatePicker>
             </label>
             
             )}

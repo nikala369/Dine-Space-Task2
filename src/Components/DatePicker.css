@@ -185,7 +185,7 @@ div.react-datepicker {
   margin: 0.41rem;
 }
 
-.react-datepicker__day--006 {
+.react-datepicker__day--excluded {
   color: #5B6BC8;
 }
 
@@ -370,5 +370,9 @@ li.react-datepicker__time-list-item--selected:hover {
 
 .react-datepicker__tab-loop {
   display: block;
+}
+
+.disable-date {
+  pointer-events: none;
 }
 /*# sourceMappingURL=DatePicker.css.map */

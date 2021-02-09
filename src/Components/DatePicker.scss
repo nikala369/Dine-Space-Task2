@@ -155,7 +155,7 @@ font-size: 14px !important;
 .react-datepicker__day-name {
   margin: 0.41rem;
 }
-.react-datepicker__day--006 {
+.react-datepicker__day--excluded {
   color: #5B6BC8;
 }
 // Arrow right
@@ -321,4 +321,7 @@ border: none !important;
 }
 .react-datepicker__tab-loop {
   display: block;
+}
+.disable-date {
+  pointer-events: none;
 }
